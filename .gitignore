@@ -1,0 +1,15 @@
+# SQL Server 数据与备份文件（体积大，不入库）
+*.bak
+*.trn
+*.mdf
+*.ldf
+
+# SSMS / Visual Studio 用户设置
+*.ssmssln
+*.sqlproj.user
+*.user
+.vs/
+
+# 系统文件
+Thumbs.db
+desktop.ini
