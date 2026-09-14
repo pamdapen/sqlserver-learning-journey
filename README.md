@@ -23,3 +23,37 @@
 
 - [ ] 验证 `OnlineOrderFlag` 猜想
 - [ ] 读《SQL学习指南》第 1-4 章并重敲示例
+
+---
+
+## 开发环境
+
+| 项目 | 值 |
+|---|---|
+| 数据库 | SQL Server 2022 Developer · 连接名 `localhost` |
+| 客户端 | SSMS 22 |
+| 示例库 | AdventureWorks2022（71 张表 / 121,317 行订单明细） |
+| Git | Git for Windows 2.55 |
+
+## 每天怎么提交
+
+```powershell
+cd C:\Users\仲墨涵\Documents\SQL专项练习
+git add -A
+git commit -m "第 X 天：今天练了什么"
+git push
+```
+
+## 网络说明
+
+本机 `github.com` 直连不稳定，已将 git 单独配置为经本地代理访问：
+
+```
+git config --global http.https://github.com.proxy http://127.0.0.1:10809
+```
+
+只对 github.com 生效，其他远程仓库不受影响。若以后不再需要代理：
+
+```
+git config --global --unset http.https://github.com.proxy
+```
