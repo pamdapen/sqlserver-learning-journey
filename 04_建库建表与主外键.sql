@@ -1,2 +1,11 @@
-DELETE FROM bank.dbo.favorite_food WHERE person_id = 1;
-DELETE FROM bank.dbo.person        WHERE person_id = 1;
+-- ========== 04 建库建表与主外键约束 ==========
+-- 日期：2026-09-15
+
+-- 1. 建库
+-- 2. 建 person 表（自增主键）
+-- 3. 建 favorite_food 表（联合主键 + 外键）
+-- 4. 改名修正：gerner -> gender
+-- 5. 加长列：street -> NVARCHAR(50)
+-- 6. 插入数据
+-- 7. 实验：外键约束的两个方向（INSERT 主表不存在 / DELETE 被引用的行）
+-- 8. 清理重复数据
